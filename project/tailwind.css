@@ -1,0 +1,60 @@
+@tailwind base;
+
+@tailwind components;
+
+
+.btn{
+    @apply transition-all duration-300 outline-none text-center 
+}
+.btn:active{
+    @apply outline-none
+}
+.btn:hover{
+    @apply shadow-lg
+}
+.btn:focus{
+  @apply outline-none
+}
+
+.pill-text{
+  @apply border-2 rounded-full px-2 text-center
+}
+
+.border-btn{
+  @apply border-2 border-opacity-0 rounded-lg
+}
+
+.border-btn:hover{
+  @apply border-opacity-50
+}
+
+.white-cross{
+  @apply bg-white bg-opacity-0 btn rounded-full
+}
+
+.white-cross:hover{
+  @apply bg-opacity-50 
+}
+
+.input{
+  @apply transition-all duration-300 outline-none
+}
+.input:focus{
+  @apply outline-none ring-2 shadow-inner
+}
+  /* GENERAL UTILITIES */
+
+  .hover-pink-png:hover{
+    filter: invert(81%) sepia(29%) saturate(3825%) hue-rotate(307deg) brightness(100%) contrast(70%) !important;
+  }
+  .purple-png{
+    filter: invert(42%) sepia(52%) saturate(487%) hue-rotate(190deg) brightness(92%) contrast(91%);
+  }
+   .white-png{
+    filter:invert(97%) sepia(100%) saturate(0%) hue-rotate(20deg) brightness(103%) contrast(104%);
+  } 
+
+  .custom-select{
+    @apply rounded-full border-2 flex justify-between py-1 text-sm font-semibold px-3
+  }
+@tailwind utilities;
